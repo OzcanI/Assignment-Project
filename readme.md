@@ -37,6 +37,13 @@ Request Body
 
 //UPDATE USER By ID
 [PUT] /users/update_user/<user_id>
+{
+    firstName : String,
+    lastName : String,
+    birthday : Date,
+    balance : Number,
+    email: email,
+}
 
 //DELETE USER By ID
 [DELETE] /users/delete_user/<user_id>
