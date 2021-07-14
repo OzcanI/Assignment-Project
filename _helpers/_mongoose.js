@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const MongoUrl = process.env.MONGOURL;
+const MongoUrl = process.MONGOURL;
 
 mongoose.Promise = global.Promise;
 
