@@ -7,6 +7,11 @@ This project contains CRUD operations with express and MongoDB
 
 [Demo](https://assignment-projectio.herokuapp.com/)
 
+## Postman Collection To Test Features
+
+[Postman Collection](https://www.postman.com/collections/0e51e5d4d2d67d3df38c)
+
+## How to Run The Project
 ```bash
 Replace MongoURL with your own MongoDB connection string
 

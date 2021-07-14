@@ -1,7 +1,8 @@
 const { body, validationResult } = require('express-validator');
 
 validateUser = [
-    body('email').isEmail() //No valıdations were specified, so I have just use email.
+    body('email').isEmail(), //No valıdations were specified, so I have just used email and birthday.
+    body('birthday').isDate(),
 ]
 
 genericValidate = validations =>{
@@ -13,7 +14,7 @@ genericValidate = validations =>{
                 break;
             }
         }
-        
+
         const errors = validationResult(req);
         if(errors.isEmpty()){
             return next();
