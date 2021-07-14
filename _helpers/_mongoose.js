@@ -25,3 +25,4 @@ db.on('open',()=>{
 exports.mongoose = mongoose;
 exports.db = db;
 
+//'mongodb+srv://ibrahim:HMN844CkhEC1ZQN7@cluster0.2u2qu.mongodb.net/my_assignment
