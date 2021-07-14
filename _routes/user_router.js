@@ -39,7 +39,7 @@ router.get('/get_user/:id', async (req, res)=>{
     }
 })
 
-//UPDATE USER
+//UPDATE USER By ID
 router.put('/update_user/:id', validateUser, async (req,res)=>{
     let {id} = req.params;
     
