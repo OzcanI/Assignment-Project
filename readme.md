@@ -28,6 +28,7 @@ Request Body
     balance : Number,
     email: email,
 }
+
 //READ ALL USERS
 [GET] /users/get_all_users
 
