@@ -17,7 +17,6 @@ router.post('/create_users', validateUser, async (req, res)=>{
 
 //READ ALL USERS
 router.get('/get_all_users', async (req, res)=>{
-    return res.send(process.env)
     try {
         let users = await Users_model.find({})
 
