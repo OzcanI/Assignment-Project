@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const MongoUrl = process.MONGOURL;
+const MongoUrl = process.env.MONGOURL;
 
 mongoose.Promise = global.Promise;
 
@@ -24,3 +24,4 @@ db.on('open',()=>{
 })
 exports.mongoose = mongoose;
 exports.db = db;
+
