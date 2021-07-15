@@ -35,7 +35,7 @@ Request Body
 }
 
 //READ ALL USERS
-[GET] /users/get_all_users
+[GET] /users/get_all_users/<page>/<limit>
 
 //READ USER BY ID
 [GET] /users/get_all_users/<user_id>
