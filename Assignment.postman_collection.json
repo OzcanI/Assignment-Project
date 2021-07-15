@@ -1,181 +1,143 @@
 {
-	"info": {
-		"_postman_id": "82a8fe1f-f1b7-438b-be52-f37bdce51298",
-		"name": "Assignment",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	"info":{
+	   "_postman_id":"82a8fe1f-f1b7-438b-be52-f37bdce51298",
+	   "name":"Assignment",
+	   "schema":"https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
-	"item": [
-		{
-			"name": "/users/create_users",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "email",
-							"value": "ibrahim3.ozcan@hotmail.com",
-							"type": "text"
-						},
-						{
-							"key": "firstName",
-							"value": "Ibrahim4",
-							"type": "text"
-						},
-						{
-							"key": "lastName",
-							"value": "Ozcan1",
-							"type": "text"
-						},
-						{
-							"key": "birthday",
-							"value": "Thu Jul 15 1997 02:35:10 GMT+0300 (GMT+03:00)",
-							"type": "text"
-						},
-						{
-							"key": "balance",
-							"value": "5",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://assignment-projectio.herokuapp.com/users/create_users",
-					"protocol": "https",
-					"host": [
-						"assignment-projectio",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"users",
-						"create_users"
-					]
-				},
-				"description": "CREATE USER"
-			},
-			"response": []
-		},
-		{
-			"name": "/users/get_all_users",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://assignment-projectio.herokuapp.com/users/get_all_users",
-					"protocol": "https",
-					"host": [
-						"assignment-projectio",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"users",
-						"get_all_users"
-					]
-				},
-				"description": "READ ALL USERS"
-			},
-			"response": []
-		},
-		{
-			"name": "/users/update_user/<user_id>",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "email",
-							"value": "any@hotmail.com",
-							"type": "text"
-						},
-						{
-							"key": "firstName",
-							"value": "newName",
-							"type": "text"
-						},
-						{
-							"key": "lastName",
-							"value": "newLastname",
-							"type": "text"
-						},
-						{
-							"key": "birthday",
-							"value": "Thu Jul 15 1997 02:35:10 GMT+0300 (GMT+03:00)",
-							"type": "text"
-						},
-						{
-							"key": "balance",
-							"value": "6",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://assignment-projectio.herokuapp.com/users/update_user/<user_id>",
-					"protocol": "https",
-					"host": [
-						"assignment-projectio",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"users",
-						"update_user",
-						"<user_id>"
-					]
-				},
-				"description": "UPDATE USER"
-			},
-			"response": []
-		},
-		{
-			"name": "/users/get_user/<user_id>",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://assignment-projectio.herokuapp.com/users/get_user/<user_id>",
-					"protocol": "https",
-					"host": [
-						"assignment-projectio",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"users",
-						"get_user",
-						"<user_id>"
-					]
-				},
-				"description": "READ USER BY ID"
-			},
-			"response": []
-		},
-		{
-			"name": "/users/delete_user/<user_id>",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "https://assignment-projectio.herokuapp.com/users/delete_user/<user_id>",
-					"protocol": "https",
-					"host": [
-						"assignment-projectio",
-						"herokuapp",
-						"com"
-					],
-					"path": [
-						"users",
-						"delete_user",
-						"<user_id>"
-					]
-				}
-			},
-			"response": []
-		}
+	"item":[
+	   {
+		  "name":"/users/create_users",
+		  "id":"d2637c8c-da9d-41ef-ac1c-bcd1b41b9220",
+		  "request":{
+			 "method":"POST",
+			 "header":[
+				
+			 ],
+			 "body":{
+				"mode":"urlencoded",
+				"urlencoded":[
+				   {
+					  "key":"email",
+					  "value":"ibrahim3.ozcan@hotmail.com",
+					  "type":"text"
+				   },
+				   {
+					  "key":"firstName",
+					  "value":"Ibrahim4",
+					  "type":"text"
+				   },
+				   {
+					  "key":"lastName",
+					  "value":"Ozcan1",
+					  "type":"text"
+				   },
+				   {
+					  "key":"birthday",
+					  "value":"Thu Jul 15 1997 02:35:10 GMT+0300 (GMT+03:00)",
+					  "type":"text"
+				   },
+				   {
+					  "key":"balance",
+					  "value":"5",
+					  "type":"text"
+				   }
+				]
+			 },
+			 "url":"https://assignment-projectio.herokuapp.com/users/create_users",
+			 "description":"CREATE USER"
+		  },
+		  "response":[
+			 
+		  ]
+	   },
+	   {
+		  "name":"/users/get_all_users",
+		  "id":"7e180633-7354-4379-b18b-abcd70f5c5a8",
+		  "request":{
+			 "method":"GET",
+			 "header":[
+				
+			 ],
+			 "url":"https://assignment-projectio.herokuapp.com/users/get_all_users/1/2",
+			 "description":"READ ALL USERS"
+		  },
+		  "response":[
+			 
+		  ]
+	   },
+	   {
+		  "name":"/users/update_user/<user_id>",
+		  "id":"83873356-9458-4018-afa3-1622b8021fcc",
+		  "request":{
+			 "method":"PUT",
+			 "header":[
+				
+			 ],
+			 "body":{
+				"mode":"urlencoded",
+				"urlencoded":[
+				   {
+					  "key":"email",
+					  "value":"any@hotmail.com",
+					  "type":"text"
+				   },
+				   {
+					  "key":"firstName",
+					  "value":"newName",
+					  "type":"text"
+				   },
+				   {
+					  "key":"lastName",
+					  "value":"newLastname",
+					  "type":"text"
+				   },
+				   {
+					  "key":"birthday",
+					  "value":"Thu Jul 15 1997 02:35:10 GMT+0300 (GMT+03:00)",
+					  "type":"text"
+				   },
+				   {
+					  "key":"balance",
+					  "value":"6",
+					  "type":"text"
+				   }
+				]
+			 },
+			 "url":"https://assignment-projectio.herokuapp.com/users/update_user/<user_id>",
+			 "description":"UPDATE USER"
+		  },
+		  "response":[
+			 
+		  ]
+	   },
+	   {
+		  "name":"/users/get_user/<user_id>",
+		  "id":"2209e6bc-0517-4712-a332-6278b8973bce",
+		  "request":{
+			 "method":"GET",
+			 "header":[
+				
+			 ],
+			 "url":"https://assignment-projectio.herokuapp.com/users/get_user/<user_id>",
+			 "description":"READ USER BY ID"
+		  },
+		  "response":[
+			 
+		  ]
+	   },
+	   {
+		  "name":"/users/delete_user/<user_id>",
+		  "id":"ec303ffc-4caa-4c86-a6d4-6f0030d5a928",
+		  "request":{
+			 "method":"DELETE",
+			 "header":[
+				
+			 ],
+			 "url":"https://assignment-projectio.herokuapp.com/users/delete_user/<user_id>"
+		  },
+		  "response":[
+			 
+		  ]
+	   }
 	]
-}
+ }
