@@ -16,11 +16,34 @@ router.post('/create_users', validateUser, async (req, res)=>{
 })
 
 //READ ALL USERS
-router.get('/get_all_users', async (req, res)=>{
+router.get('/get_all_users/:page/:limit', async (req, res)=>{
     try {
-        let users = await Users_model.find({})
+        const page = parseInt(req.params.page);
+        const limit = parseInt(req.params.limit);
 
-        return res.send(users)
+        const startIndex = (page - 1) * limit;
+       
+        const endIndex = page * limit;
+
+        const results = {};
+
+        if(endIndex < await Users_model.countDocuments()){
+            results.next = {
+                page: page+1,
+                limit: limit
+            }
+        }
+
+        if(startIndex>0){
+            results.previous = {
+                page: page - 1,
+                limit: limit
+            }
+        }
+
+        results.results = await Users_model.find({}).limit(limit).skip(startIndex)
+
+        return res.send(results)
     }catch (e){
         res.json({ error: e.message || e.toString() });
     }
