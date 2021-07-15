@@ -42,6 +42,7 @@ Request Body
 
 //UPDATE USER By ID
 [PUT] /users/update_user/<user_id>
+Request Body
 {
     firstName : String,
     lastName : String,
