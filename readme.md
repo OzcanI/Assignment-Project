@@ -1,7 +1,7 @@
 
 # Node JS CRUD Operations
 
-This project contains CRUD operations with express and MongoDB
+This project contains basic CRUD operations with express and MongoDB
 
 ## Live Demo Api
 
